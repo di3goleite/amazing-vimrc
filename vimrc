@@ -1,6 +1,4 @@
-"*****************************************************************************
-"" NeoBundle core
-"*****************************************************************************
+" 1 - NeoBundle core
 
 if has('vim_starting')
   set nocompatible               " Be iMproved
@@ -29,21 +27,41 @@ call neobundle#begin(expand('~/.vim/bundle/'))
 " Required:
 NeoBundleFetch 'Shougo/neobundle.vim'
 
-"*****************************************************************************
-"" NeoBundle install packages
-"*****************************************************************************
+" 2 - Packages
+" 2.1 - Apparence
+NeoBundle "morhetz/gruvbox"
 NeoBundle 'scrooloose/nerdtree'
+NeoBundle "itchyny/lightline.vim"
+NeoBundle "godlygeek/csapprox.git"
+NeoBundle "skwp/vim-colors-solarized"
+NeoBundle "chrisbra/color_highlight.git"
 
-call neobundle#end()
+" 2.2 - Git
+NeoBundle "tpope/vim-git"
+NeoBundle "mattn/gist-vim"
+NeoBundle "gregsexton/gitv"
+NeoBundle "tpope/vim-fugitive"
+NeoBundle 'airblade/vim-gitgutter'
 
 " Required:
-filetype plugin indent on
+call neobundle#end()
 
 " If there are uninstalled bundles found on startup,
 " this will conveniently prompt you to install them.
 NeoBundleCheck
 
+" 3 - Settings
+" 3.1 - NERDTree
+let NERDTreeMinimalUI = 1
+let NERDTreeDirArrows = 1
+let g:NERDTreeWinSize = 30
 
-" Keybinding
+" 3.2 - Git
+" 3.2.1 - Fugitive
+nnoremap <silent> ,dg :diffget<CR>
+nnoremap <silent> ,dp :diffput<CR>
+
+" 4 - Keybinding
+" 4.1 - NERDTree
 nnoremap <silent> <F2> :NERDTreeFind<CR>
 noremap <F3> :NERDTreeToggle<CR>
