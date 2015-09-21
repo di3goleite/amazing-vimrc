@@ -112,26 +112,32 @@ set incsearch
 set ignorecase
 set smartcase
 
-" 3.3 - NERDTree
+" 3.3 - Tab
+set tabstop=4
+set softtabstop=0
+set shiftwidth=4
+set expandtab
+
+" 3.4 - NERDTree
 let NERDTreeMinimalUI = 1
 let NERDTreeDirArrows = 1
 let g:NERDTreeWinSize = 30
 let g:NERDTreeShowBookmarks=1
 
-" 3.4 - NERDTree Tabs
+" 3.5 - NERDTree Tabs
 " Auto open nerd tree on startup
 let g:nerdtree_tabs_open_on_gui_startup = 0
 
 " Focus in the main content window
 let g:nerdtree_tabs_focus_on_files = 1
 
-" 3.5 - Session management
+" 3.6 - Session management
 let g:session_directory = "~/.vim/session"
 let g:session_autoload = "no"
 let g:session_autosave = "no"
 let g:session_command_aliases = 1
 
-" 3.6 - neocomplete
+" 3.7 - neocomplete
 let g:acp_enableAtStartup = 0
 let g:neocomplete#enable_at_startup = 1
 let g:neocomplete#enable_camel_case = 1
@@ -161,7 +167,7 @@ autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
 autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
 autocmd FileType ruby setlocal omnifunc=rubycomplete#Complete"
 
-" 3.7 - Gundo
+" 3.8 - Gundo
 " open on the right so as not to compete with the nerdtree
 let g:gundo_right = 1
 
