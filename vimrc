@@ -31,6 +31,7 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 " 2.1 - Apparence
 NeoBundle 'morhetz/gruvbox'
 NeoBundle 'itchyny/lightline.vim'
+" Just for term with 256 colors support
 " NeoBundle 'godlygeek/csapprox.git'
 NeoBundle 'skwp/vim-colors-solarized'
 NeoBundle 'chrisbra/color_highlight.git'
@@ -45,6 +46,32 @@ NeoBundle 'airblade/vim-gitgutter'
 " 2.3 - Languages
 " 2.3.1 - General
 NeoBundle 'sheerun/vim-polyglot'
+
+" 2.3.2 - Python
+NeoBundle "majutsushi/tagbar"
+NeoBundle "Yggdroot/indentLine"
+NeoBundle "davidhalter/jedi-vim"
+NeoBundle "scrooloose/syntastic"
+
+" 2.3.3 - C
+NeoBundle 'vim-scripts/c.vim'
+
+" 2.3.4 - Javascript
+NeoBundle "scrooloose/syntastic"
+NeoBundle "jelera/vim-javascript-syntax"
+NeoBundle "othree/javascript-libraries-syntax.vim"
+
+" 2.3.5 - HTML
+NeoBundle 'tpope/vim-haml'
+NeoBundle 'mattn/emmet-vim'
+NeoBundle 'hail2u/vim-css3-syntax'
+NeoBundle 'amirh/HTML-AutoCloseTag'
+NeoBundle 'gorodinskiy/vim-coloresque'
+
+" 2.3.6 - PHP
+NeoBundle 'xsbeats/vim-blade'
+NeoBundle 'StanAngeloff/php.vim'
+NeoBundle 'arnaud-lb/vim-php-namespace'
 
 " 2.4 - Utilities
 NeoBundle 'mileszs/ack.vim'
@@ -66,6 +93,7 @@ NeoBundle 'xolox/vim-session'
 NeoBundle 'ctrlpvim/ctrlp.vim'
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'jistr/vim-nerdtree-tabs.git'
+NeoBundle 'MattesGroeger/vim-bookmarks'
 
 " Required:
 call neobundle#end()
@@ -248,3 +276,4 @@ nnoremap <F5> :GundoToggle<CR>
 " 6 - Manual
 " NeoBundle 'AndrewRadev/splitjoin.vim'
 " NeoBundle 'terryma/vim-multiple-cursors'
+" NeoBundle'MattesGroeger/vim-bookmarks'
