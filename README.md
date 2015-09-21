@@ -1,5 +1,5 @@
 # amazing-vimrc
-A stable amazing vimrc
+A stable and amazing vimrc
 
 #Roadmap
 
