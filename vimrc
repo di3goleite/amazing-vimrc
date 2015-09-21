@@ -31,7 +31,7 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 " 2.1 - Apparence
 NeoBundle 'morhetz/gruvbox'
 NeoBundle 'itchyny/lightline.vim'
-NeoBundle 'godlygeek/csapprox.git'
+" NeoBundle 'godlygeek/csapprox.git'
 NeoBundle 'skwp/vim-colors-solarized'
 NeoBundle 'chrisbra/color_highlight.git'
 
@@ -126,7 +126,7 @@ autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
 autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
 autocmd FileType ruby setlocal omnifunc=rubycomplete#Complete"
 
-3.6 - Gundo
+" 3.6 - Gundo
 " open on the right so as not to compete with the nerdtree
 let g:gundo_right = 1
 
@@ -136,6 +136,7 @@ let g:gundo_width = 60
 " 4 - Visual settings
 " 4.1 - General
 syntax on
+set t_Co=16
 colorscheme solarized
 set background=dark
 
@@ -145,18 +146,15 @@ let g:lightline = {
       \ 'active': {
       \   'left': [ [ 'mode', 'paste'  ],
       \             [ 'fugitive', 'readonly', 'filename', 'modified'  ]  ]
-      \
-      },
+      \ },
       \ 'component_function': {
       \   'fugitive': 'MyFugitive',
       \   'readonly': 'MyReadonly',
       \   'filename': 'MyFilename',
-      \
-      },
+      \ },
       \ 'separator': { 'left': '⮀', 'right': '⮂'  },
       \ 'subseparator': { 'left': '⮁', 'right': '⮃'  }
-      \
-}
+      \ }
 
 function! MyReadonly()
   if &filetype == "help"
@@ -182,7 +180,7 @@ function! MyFilename()
 endfunction
 
 " Use status bar even with single buffer
-set laststatus=2"
+set laststatus=2
 
 " 5 - Keybinding
 " 5.1 - NERDTree
