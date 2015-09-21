@@ -6,7 +6,7 @@ A stable and amazing vimrc
 Feature               | Status
 --------------------- | -----------
 Initial vimrc         | Done
+Vim swap files        | Done
 NERDTree Enhancements | To Do
-Vim swap files        | To Do
-Keybiding manual      | To Do
 256 Terminal          | To Do
+Keybiding manual      | To Do

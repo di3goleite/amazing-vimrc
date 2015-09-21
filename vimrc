@@ -95,49 +95,71 @@ NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'jistr/vim-nerdtree-tabs.git'
 NeoBundle 'MattesGroeger/vim-bookmarks'
 
-" Required:
 call neobundle#end()
+
+" Required:
+filetype plugin indent on
 
 " If there are uninstalled bundles found on startup,
 " this will conveniently prompt you to install them.
 NeoBundleCheck
 
 " 3 - General settings
-" 3.1 - Map leader
+" 3.1 - Miscellaneous
+" Map leader
 let mapleader=','
 
-" 3.2 - Searching
+" Searching
 set hlsearch
 set incsearch
 set ignorecase
 set smartcase
 
-" 3.3 - Tab
+" Tab
 set tabstop=4
 set softtabstop=0
 set shiftwidth=4
 set expandtab
 
-" 3.4 - NERDTree
+" Encoding
+set encoding=utf-8
+set fileencoding=utf-8
+set fileencodings=utf-8
+
+" Fix backspace indent
+set backspace=indent,eol,start
+
+" Enable hidden buffers
+set hidden
+
+" Encoding
+set bomb
+set binary
+
+" Directories for swp files
+set nobackup
+set noswapfile
+
+" 3.2 - NERDTree
 let NERDTreeMinimalUI = 1
 let NERDTreeDirArrows = 1
 let g:NERDTreeWinSize = 30
 let g:NERDTreeShowBookmarks=1
 
-" 3.5 - NERDTree Tabs
+" 3.3 - NERDTree Tabs
 " Auto open nerd tree on startup
 let g:nerdtree_tabs_open_on_gui_startup = 0
 
 " Focus in the main content window
 let g:nerdtree_tabs_focus_on_files = 1
 
-" 3.6 - Session management
+" 3.4 - Session management
 let g:session_directory = "~/.vim/session"
 let g:session_autoload = "no"
 let g:session_autosave = "no"
 let g:session_command_aliases = 1
 
-" 3.7 - neocomplete
+" 3.5 - neocomplete
 let g:acp_enableAtStartup = 0
 let g:neocomplete#enable_at_startup = 1
 let g:neocomplete#enable_camel_case = 1
@@ -167,7 +189,7 @@ autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
 autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
 autocmd FileType ruby setlocal omnifunc=rubycomplete#Complete"
 
-" 3.8 - Gundo
+" 3.6 - Gundo
 " open on the right so as not to compete with the nerdtree
 let g:gundo_right = 1
 
@@ -177,9 +199,15 @@ let g:gundo_width = 60
 " 4 - Visual settings
 " 4.1 - General
 syntax on
+set ruler
+set number
 set t_Co=16
-colorscheme solarized
+set cursorline
 set background=dark
+colorscheme solarized
+
+set modeline
+set modelines=10
 
 "4.2 - Lightline
 let g:lightline = {
