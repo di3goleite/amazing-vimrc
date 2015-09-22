@@ -48,18 +48,16 @@ NeoBundle 'airblade/vim-gitgutter'
 NeoBundle 'sheerun/vim-polyglot'
 
 " 2.3.2 - Python
-NeoBundle "majutsushi/tagbar"
-NeoBundle "Yggdroot/indentLine"
-NeoBundle "davidhalter/jedi-vim"
-NeoBundle "scrooloose/syntastic"
+NeoBundle 'majutsushi/tagbar'
+NeoBundle 'Yggdroot/indentLine'
+NeoBundle 'davidhalter/jedi-vim'
 
 " 2.3.3 - C
 NeoBundle 'vim-scripts/c.vim'
 
 " 2.3.4 - Javascript
-NeoBundle "scrooloose/syntastic"
-NeoBundle "jelera/vim-javascript-syntax"
-NeoBundle "othree/javascript-libraries-syntax.vim"
+NeoBundle 'jelera/vim-javascript-syntax'
+NeoBundle 'othree/javascript-libraries-syntax.vim'
 
 " 2.3.5 - HTML
 NeoBundle 'tpope/vim-haml'
@@ -75,6 +73,7 @@ NeoBundle 'arnaud-lb/vim-php-namespace'
 
 " 2.4 - Utilities
 NeoBundle 'mileszs/ack.vim'
+NeoBundle 'scrooloose/syntastic'
 NeoBundle 'jiangmiao/auto-pairs'
 NeoBundle 'tpope/vim-commentary'
 NeoBundle 'Shougo/neocomplete.vim'
