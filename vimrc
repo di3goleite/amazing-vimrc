@@ -32,7 +32,8 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 NeoBundle 'morhetz/gruvbox'
 NeoBundle 'itchyny/lightline.vim'
 " Just for term with 256 colors support
-" NeoBundle 'godlygeek/csapprox.git'
+NeoBundle 'godlygeek/csapprox.git'
+NeoBundle 'tomasr/molokai'
 NeoBundle 'skwp/vim-colors-solarized'
 NeoBundle 'chrisbra/color_highlight.git'
 
@@ -120,9 +121,9 @@ set softtabstop=0
 set shiftwidth=4
 set expandtab
 
+
 " Encoding
 set encoding=utf-8
-set fileencoding=utf-8
 set fileencodings=utf-8
 
 " Fix backspace indent
@@ -198,30 +199,27 @@ let g:gundo_width = 60
 " 3.7 - Syntastic
 let g:syntastic_javascript_checkers = ['jshint']
 
-" 4 - Visual settings
+" 4 - oisual settings
 " 4.1 - General
 syntax on
 set ruler
 set number
-set t_Co=16
+set t_Co=256
 set background=dark
-colorscheme solarized
+colorscheme molokai
 
 "4.2 - Lightline
 let g:lightline = {
-      \ 'colorscheme': 'solarized',
-      \ 'active': {
-      \   'left': [ [ 'mode', 'paste'  ],
-      \             [ 'fugitive', 'readonly', 'filename', 'modified'  ]  ]
-      \ },
-      \ 'component_function': {
-      \   'fugitive': 'MyFugitive',
-      \   'readonly': 'MyReadonly',
-      \   'filename': 'MyFilename',
-      \ },
-      \ 'separator': { 'left': '⮀', 'right': '⮂'  },
-      \ 'subseparator': { 'left': '⮁', 'right': '⮃'  }
-      \ }
+	\ 'active': {
+	\   'left': [ [ 'mode', 'paste'  ],
+	\             [ 'fugitive', 'readonly', 'filename', 'modified'  ]  ]
+	\ },
+	\ 'component_function': {
+	\   'fugitive': 'MyFugitive',
+	\   'readonly': 'MyReadonly',
+	\   'filename': 'MyFilename',
+	\ },
+	\ }
 
 function! MyReadonly()
   if &filetype == "help"
@@ -311,6 +309,10 @@ let g:tagbar_autofocus = 1"
 
 " 5.13 - Gundo
 nnoremap <F5> :GundoToggle<CR>
+
+" 5.14 - Vmap for maintain Visual Mode after shifting > and <
+vmap < <gv
+vmap > >gv"
 
 " 6 - Manual
 " NeoBundle 'AndrewRadev/splitjoin.vim'
