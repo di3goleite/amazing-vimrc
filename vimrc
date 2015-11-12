@@ -9,9 +9,6 @@ endif
 
 let neobundle_readme=expand('~/.vim/bundle/neobundle.vim/README.md')
 
-let g:vim_bootstrap_langs = "javascript,python,c,php,html"
-let g:vim_bootstrap_editor = "vim"				" nvim or vim
-
 if !filereadable(neobundle_readme)
   echo "Installing NeoBundle..."
   echo ""
@@ -72,6 +69,9 @@ NeoBundle 'xsbeats/vim-blade'
 NeoBundle 'StanAngeloff/php.vim'
 NeoBundle 'arnaud-lb/vim-php-namespace'
 
+" 2.3.7 - Markdown
+NeoBundle 'plasticboy/vim-markdown'
+
 " 2.4 - Utilities
 NeoBundle 'mileszs/ack.vim'
 NeoBundle 'scrooloose/syntastic'
@@ -124,7 +124,9 @@ set expandtab
 
 " Encoding
 set encoding=utf-8
+set fileencoding=utf-8
 set fileencodings=utf-8
+set keymap=accents
 
 " Fix backspace indent
 set backspace=indent,eol,start
