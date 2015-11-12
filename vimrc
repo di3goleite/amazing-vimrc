@@ -55,7 +55,6 @@ NeoBundle 'vim-scripts/c.vim'
 
 " 2.3.4 - Javascript
 NeoBundle 'jelera/vim-javascript-syntax'
-NeoBundle 'othree/javascript-libraries-syntax.vim'
 
 " 2.3.5 - HTML
 NeoBundle 'tpope/vim-haml'
