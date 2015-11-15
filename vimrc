@@ -200,7 +200,7 @@ let g:gundo_width = 60
 " 3.7 - Syntastic
 let g:syntastic_javascript_checkers = ['jshint']
 
-" 4 - oisual settings
+" 4 - Visual settings
 " 4.1 - General
 syntax on
 set ruler
