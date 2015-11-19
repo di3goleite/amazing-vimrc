@@ -187,7 +187,7 @@ autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
 autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
 autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
 autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
-autocmd FileType ruby setlocal omnifunc=rubycomplete#Complete"
+autocmd FileType ruby setlocal omnifunc=rubycomplete#Complete
 
 " 3.6 - Gundo
 " open on the right so as not to compete with the nerdtree
