@@ -46,7 +46,6 @@ NeoBundle 'airblade/vim-gitgutter'
 NeoBundle 'sheerun/vim-polyglot'
 
 " 2.3.2 - Python
-NeoBundle 'majutsushi/tagbar'
 NeoBundle 'Yggdroot/indentLine'
 NeoBundle 'davidhalter/jedi-vim'
 
